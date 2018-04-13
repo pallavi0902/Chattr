@@ -28,9 +28,9 @@ const youtube = google.youtube({
 });
 
 // Static Responses
-const HELP_MESSAGE = 'Welcome to Popular Videos, I can tell you the titles of the most popular videos on YouTube right now.';
+const HELP_MESSAGE = 'Welcome to Pizza Maker';
 const STOP_MESSAGE = 'Goodbye!';
-const NO_CONNECTION_MESSAGE = 'I can\'t connect to YouTube right now, please try again later.';
+const NO_CONNECTION_MESSAGE = 'I cant understand.';
 
 // Setup request handler
 exports.handler = function (event, context, callback) {
@@ -43,10 +43,10 @@ exports.handler = function (event, context, callback) {
 const handlers = {
   // Intent for a request to launch the request
   'LaunchRequest': function () {
-    this.emit('GetPopularVideosIntent');
+    this.emit('PizzamakerIntent');
   },
   // Intent for listing the 5 most popular videos on YouTube
-  'GetPopularVideosIntent': function () {
+  'PizzaMakerIntent': function () {
     youtube.search.list({
       part: 'snippet',
       maxResults: 5,

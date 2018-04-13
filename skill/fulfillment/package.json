@@ -1,5 +1,5 @@
 {
-  "name": "youtube-skill",
+  "name": "pizzamaker-skill",
   "version": "1.0.0",
   "description": "A simple sample showing how to import a Alexa skill into API.AI",
   "main": "index.js",

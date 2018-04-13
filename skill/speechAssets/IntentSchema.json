@@ -1,16 +1,145 @@
 {
-  "intents": [
-    {
-      "intent": "PizzaMakerIntent"
-    },
-    {
-      "intent": "AMAZON.HelpIntent"
-    },
-    {
-      "intent": "AMAZON.StopIntent"
-    },
-    {
-      "intent": "AMAZON.CancelIntent"
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "pizza maker",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PizzaMatchIntent",
+                    "slots": [
+                        {
+                            "name": "cheese",
+                            "type": "topping"
+                        },
+                        {
+                            "name": "pizza",
+                            "type": "topping"
+                        },
+                        {
+                            "name": "veggie",
+                            "type": "sizetype"
+                        },
+                        {
+                            "name": "jalepeno",
+                            "type": "topping"
+                        },
+                        {
+                            "name": "large",
+                            "type": "sizetype"
+                        },
+                        {
+                            "name": "medium",
+                            "type": "sizetype"
+                        },
+                        {
+                            "name": "extra",
+                            "type": "topping"
+                        }
+                    ],
+                    "samples": [
+                        "{extra} cheese pizza",
+                        "{medium} pizza",
+                        "get me a {large} pizza",
+                        "can I have {veggie} pizza",
+                        "pizza please",
+                        "I want {cheese} pizza",
+                        "I want a {pizza}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "topping",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "veggie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cheese"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "sizetype",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "medium",
+                                "synonyms": [
+                                    "normal"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "large",
+                                "synonyms": [
+                                    "big"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
     }
-  ]
 }

@@ -1,5 +1,5 @@
-extra cheese pizza 
-medium pizza  
-get me a large pizza
-can I have veggie pizza 
-pizza please
+PizzaMakerIntent extra cheese pizza 
+TypeIntent medium pizza  
+TypeIntentget me a large pizza
+ToppingIntentcan I have veggie pizza 
+PizzaMakerIntentpizza please

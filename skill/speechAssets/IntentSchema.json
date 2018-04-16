@@ -4,19 +4,19 @@
             "invocationName": "pizza maker",
             "intents": [
                 {
-                    "name": "AMAZON.CancelIntent",
+                    "intent": "AMAZON.CancelIntent",
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.HelpIntent",
+                    "intent": "AMAZON.HelpIntent",
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.StopIntent",
+                    "intent": "AMAZON.StopIntent",
                     "samples": []
                 },
                 {
-                    "name": "PizzaMatchIntent",
+                    "intent": "PizzaMatchIntent",
                     "slots": [
                         {
                             "name": "cheese",
@@ -58,47 +58,47 @@
                     ]
                 },
                 {
-                    "name": "AMAZON.MoreIntent",
+                    "intent": "AMAZON.MoreIntent",
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.NavigateHomeIntent",
+                    "intent": "AMAZON.NavigateHomeIntent",
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.NavigateSettingsIntent",
+                    "intent": "AMAZON.NavigateSettingsIntent",
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.NextIntent",
+                    "intent": "AMAZON.NextIntent",
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.PageUpIntent",
+                    "intent": "AMAZON.PageUpIntent",
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.PageDownIntent",
+                    "intent": "AMAZON.PageDownIntent",
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.PreviousIntent",
+                    "intent": "AMAZON.PreviousIntent",
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.ScrollRightIntent",
+                    "intent": "AMAZON.ScrollRightIntent",
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.ScrollDownIntent",
+                    "intent": "AMAZON.ScrollDownIntent",
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.ScrollLeftIntent",
+                    "intent": "AMAZON.ScrollLeftIntent",
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.ScrollUpIntent",
+                    "intent": "AMAZON.ScrollUpIntent",
                     "samples": []
                 }
             ],
